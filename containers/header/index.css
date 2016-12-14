@@ -4,7 +4,7 @@
   width: auto;
   height: auto;
   margin: 0 auto;
-  padding: 0.83333rem;
+  padding: 0;
   z-index: 3;
 }
 
@@ -27,7 +27,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0.83333rem;
+  padding: 0;
 }
 
 /* header logo */
