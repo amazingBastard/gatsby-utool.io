@@ -9,32 +9,18 @@ class Header extends Component {
   render() {
     const { location } = this.props;
 
-    let header;
-
-    if (location.pathname === prefixLink('/')) {
-      header = (
-        <header className="index header">
-          <Headroom disableInlineStyles>
-            <Link className="link" to={prefixLink('/')}>
-              <img className="logo image" src={prefixLink('/images/logo.png')} />
-            </Link>
-          </Headroom>
-        </header>
-      );
-    } else {
-      // optional: different headers for other pages
-      header = (
-        <header className="header">
-          <Headroom disableInlineStyles>
-            <Link className="link" to={prefixLink('/')}>
-              <img className="logo image" src={prefixLink('/images/logo.png')} />
-            </Link>
-          </Headroom>
-        </header>
-      );
-    }
-
-    return header;
+    return (
+      <header className="index header">
+        <Headroom disableInlineStyles>
+          <Link className="logo link" to={prefixLink('/')}>
+            <div className="cube">
+              <div className="face front">μ</div>
+              <div className="face left">μ</div>
+            </div>
+          </Link>
+        </Headroom>
+      </header>
+    );
   }
 }
 

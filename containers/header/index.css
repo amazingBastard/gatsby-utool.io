@@ -31,20 +31,56 @@
 }
 
 /* header logo */
-.header .headroom-wrapper .headroom .link .logo {
-	width: 50px;
-	height: 50px;
-	margin: 0;
-	padding: .3rem;
-	vertical-align: middle;
-  border: .15rem solid #aaa;
-  background-color: #fff;
-  filter: grayscale(100%);
-  transition: all 250ms;
+.header .headroom-wrapper .headroom .link.logo {
+  display: block;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  perspective: 1000px;
+  perspective-origin: 50% 100%;
+  font-family: 'Roboto Mono', 'Inconsolata', Menlo, Monaco, Consolas, monospace;
 }
 
-/* header logo hover state */
-.header .headroom-wrapper .headroom .link:hover .logo {
-  border-color: #e76600;
-  filter: grayscale(0);
+/* header logo cube */
+.header .headroom-wrapper .headroom .link.logo .cube {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 350ms;
+}
+
+/* header logo hover state cube */
+.header .headroom-wrapper .headroom .link.logo:hover .cube {
+  left: 1rem;
+  transform: rotateX(0) rotateY(90deg);
+}
+
+/* header logo cube face */
+.header .headroom-wrapper .headroom .link.logo .cube .face {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0.35rem 0.75rem 0.5rem;
+  border: 0.15rem solid #222;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1;
+}
+
+/* header logo cube face front */
+.header .headroom-wrapper .headroom .link.logo .cube .face.front {
+  background: rgba(255, 255, 0, 0.75);
+  color: #222;
+  transform: translateZ(1.15rem);
+}
+
+/* header logo cube face left */
+.header .headroom-wrapper .headroom .link.logo .cube .face.left {
+  background: #222;
+  color: #ffff00;
+  transform: rotateY(-90deg) translateZ(1.15rem);
 }
