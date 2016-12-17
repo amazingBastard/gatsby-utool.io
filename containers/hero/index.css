@@ -14,14 +14,15 @@
 /* hero title */
 .hero.section .title {
 	margin: 0 auto;
-	color: #e76600;
-	font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: left;
 	transition: opacity 500ms ease;
 }
 
 /* hero title sub */
 .hero.section .title .sub {
 	display: block;
-	color: #777;
-	font-size: 50%;	
+	margin-top: 3.83333rem;
+	color: #111;
+	font-size: 50%;
+	text-indent: 2rem;
 }

@@ -24,28 +24,30 @@ const options = {
   ],
   googleFonts: [
     {
-      name: 'Ubuntu',
+      name: 'Inconsolata',
       styles: [
-        '300',
-        '300i',
         '400',
-        '400i',
-        '500',
-        '500i',
-        '700',
-        '700i'
+        '700'
       ]
     },
     {
-      name: 'Montserrat',
+      name: 'Roboto Mono',
+      styles: [
+        '400',
+        '500',
+        '700'
+      ]
+    },
+    {
+      name: 'Droid Sans',
       styles: [
         '400',
         '700'
       ]
     }
   ],
-  headerFontFamily: ['"Ubuntu"', '"Open Sans"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['"Montserrat"', '"Open Sans"', '"Helvetica Neue"','Helvetica', 'Arial', 'sans-serif'],
+  headerFontFamily: ['"Roboto Mono"', '"Inconsolata"', 'Menlo, Monaco', 'Consolas', 'monospace'],
+  bodyFontFamily: ['"Droid Sans"', 'Helvetica', 'Arial', 'sans-serif'],
   headerGray: 0,
   bodyGray: 0,
   headerWeight: 400,

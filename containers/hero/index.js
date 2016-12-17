@@ -48,10 +48,10 @@ class Hero extends Component {
       hero = (
         <section className="index hero section">
           <h1 className="title">
-            {config.siteTitle}
-            <small className="sub description">
-              {config.siteDescription}
-            </small>
+            We build software.
+            <p className="sub description">
+              <strong>{config.siteTitle}</strong> {config.siteDescription}
+            </p>
           </h1>
         </section>
       );
