@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import Hero from 'containers/hero/';
+import Benefits from 'containers/benefits';
+import Figures from 'containers/figures';
+import Clients from 'containers/clients';
 import Work from 'containers/work/';
 import Blog from 'containers/blog/';
 import { rhythm } from 'utils/typography';
@@ -26,18 +29,9 @@ class Index extends Component {
       <DocumentTitle title={config.siteTitle}>
         <main className="index page" style={style.page}>
           <Hero route={route} />
-          <section className="benefits section">
-            <h3 className="title">
-                Attract customers with more
-            </h3>
-            <ul className="list">
-              <li className="item">Growth Opportunities</li>
-              <li className="item">Trial Signups</li>
-              <li className="item">Leads</li>
-              <li className="item">Sales and Purchases</li>
-              <li className="item">Click-throughs</li>
-            </ul>
-          </section>
+          <Benefits />
+          <Figures />
+          <Clients />
           <Work route={route} />
           <Blog route={route} />
         </main>
