@@ -1,0 +1,24 @@
+/* subscribe container */
+.subscribe.section {
+  margin: 1.83333rem auto 0;
+  background-color: #e8e8e8;
+}
+
+/* subscribe title */
+.subscribe.section .subscribe.figure .title {
+  text-align: center;
+}
+
+/* subscribe title sub */
+.subscribe.section .subscribe.figure .title .sub {
+  display: block;
+  margin-top: 0.83333rem;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* subscribe form */
+.subscribe.section .subscribe.figure .subscribe.form {
+  max-width: 28em;
+  margin: 0 auto;
+}

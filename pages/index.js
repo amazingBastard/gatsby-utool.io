@@ -8,6 +8,7 @@ import CTA from 'containers/cta';
 import Leadership from 'containers/leadership';
 import Tools from 'containers/tools';
 import Blog from 'containers/blog/';
+import Subscribe from 'containers/subscribe';
 import { rhythm } from 'utils/typography';
 import { config } from 'config';
 
@@ -38,6 +39,7 @@ class Index extends Component {
           <Leadership />
           <Tools route={route} />
           <Blog route={route} />
+          <Subscribe />
         </main>
       </DocumentTitle>
     );

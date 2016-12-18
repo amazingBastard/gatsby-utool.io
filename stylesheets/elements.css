@@ -138,27 +138,52 @@
 
 /* button */
 .button {
+	cursor: pointer;
 	display: block;
 	position: relative;
 	margin: 0 auto;
 	margin-bottom: 0.83333rem;
 	padding: 0.83333rem;
 	outline: 0;
-	border: 0.10417rem solid #a0a0a0;
-	background-color: transparent;
-	color: #222;
+	border: 0.10417rem solid #000;
+	background-color: #ffff00;
+	color: #555;
 	text-align: center;
 	line-height: 1;
 	transition: all 250ms;
 }
 
 .button:hover {
-	border-color: #93B556;
-	color: #cf3c44;
+	background-color: #555;
+	color: #fff;
 }
 
 .button:active {
-	background-color: #cf3c44;
-	border-color: #cf3c44;
+	background-color: #000;
 	color: #fff;
+}
+
+/* FORMS */
+
+/* form field */
+.form .field {
+	display: flex;
+	margin: 0 auto;
+}
+
+/* form field input */
+.form .field .input {
+	padding: 0.83333rem;
+	outline: 0;
+	border: 0.1rem solid #000;
+}
+
+/* form field group input */
+.form .field.group .input {
+	flex: 1;
+}
+
+/* form field group button */
+.form .field.group .button {
+	margin: 0;
 }
