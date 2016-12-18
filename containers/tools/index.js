@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access';
 import sortBy from 'lodash/sortBy';
@@ -14,6 +15,10 @@ class Tools extends Component {
     const pages = route.pages;
     const path = route.page.path;
 
+    const title = {
+      title: 'Latest Tools'
+    };
+
 		let tools;
 
 		const toolsList = [];
@@ -28,15 +33,21 @@ class Tools extends Component {
 
 		if (path === prefixLink('/')) {
 			tools = (
-				<ul className="featured tools flex list">
-					{toolsList.slice(0,2)}
-				</ul>
+        <figure className="figure container">
+          <Title meta={title} />
+  				<ul className="featured tools flex list">
+  					{toolsList.slice(0,2)}
+  				</ul>
+          <Link className="link" to="/tools/">View all</Link>
+        </figure>
 			);
 		} else {
 			tools = (
-				<ul className="tools flex list">
-					{toolsList}
-				</ul>
+        <figure className="figure container">
+  				<ul className="tools flex list">
+  					{toolsList}
+  				</ul>
+        </figure>
 			);
 		}
 
@@ -44,16 +55,9 @@ class Tools extends Component {
   }
 
 	render() {
-    const title = {
-      title: 'Latest Tools'
-    };
-
 		return (
       <section className="tools section">
-        <figure className="figure container">
-          <Title meta={title} />
-          {this.renderTools()}
-        </figure>
+        {this.renderTools()}
       </section>
     );
 	}

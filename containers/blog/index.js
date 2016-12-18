@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
+import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access';
 import sortBy from 'lodash/sortBy';
 import include from 'underscore.string/include';
 import Post from 'components/post';
 import Title from 'components/title';
-import { prefixLink } from 'gatsby-helpers'
 
 import 'containers/blog/index.css';
 
@@ -13,6 +14,10 @@ class Blog extends Component {
     const { route } = this.props;
     const pages = route.pages;
     const path = route.page.path;
+
+    const title = {
+      title: 'From the Blog'
+    };
 
 		let posts;
 
@@ -28,15 +33,21 @@ class Blog extends Component {
 
 		if (path === prefixLink('/')) {
 			posts = (
-				<ul className="featured posts flex list">
-					{postsList.slice(0,2)}
-				</ul>
+        <figure className="figure container">
+          <Title meta={title} />
+  				<ul className="featured posts flex list">
+  					{postsList.slice(0,2)}
+  				</ul>
+          <Link className="link" to="/blog/">View our blog</Link>
+        </figure>
 			);
 		} else {
 			posts = (
-				<ul className="posts flex list">
-					{postsList}
-				</ul>
+        <figure className="figure container">
+  				<ul className="posts flex list">
+  					{postsList}
+  				</ul>
+        </figure>
 			);
 		}
 
@@ -44,16 +55,9 @@ class Blog extends Component {
   }
 
 	render() {
-    const title = {
-      title: 'From the Blog'
-    };
-
 		return (
       <section className="blog section">
-        <figure className="figure container">
-          <Title meta={title} />
-          {this.renderPosts()}
-        </figure>
+        {this.renderPosts()}
       </section>
     );
 	}
