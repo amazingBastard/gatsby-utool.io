@@ -216,14 +216,14 @@ const options = {
       }
     },
     a: {
-      color: '#ff995e',
+      color: '#222',
       fontSize: 'inerit',
       fontWeight: 'inherit',
       textDecoration: 'none',
       transition: 'color 250ms'
     },
     'a:hover': {
-      color: '#ff865e',
+      color: '#333',
       textDecoration: 'underline'
     }
   })

@@ -29,7 +29,7 @@ class Blog extends Component {
 		if (path === prefixLink('/')) {
 			posts = (
 				<ul className="featured posts flex list">
-					{postsList.slice(0,3)}
+					{postsList.slice(0,2)}
 				</ul>
 			);
 		} else {

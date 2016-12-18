@@ -4,7 +4,9 @@ import Hero from 'containers/hero/';
 import Benefits from 'containers/benefits';
 import Figures from 'containers/figures';
 import Clients from 'containers/clients';
-import Work from 'containers/work/';
+import CTA from 'containers/cta';
+import Leadership from 'containers/leadership';
+import Tools from 'containers/tools';
 import Blog from 'containers/blog/';
 import { rhythm } from 'utils/typography';
 import { config } from 'config';
@@ -32,7 +34,9 @@ class Index extends Component {
           <Benefits />
           <Figures />
           <Clients />
-          <Work route={route} />
+          <CTA />
+          <Leadership />
+          <Tools route={route} />
           <Blog route={route} />
         </main>
       </DocumentTitle>

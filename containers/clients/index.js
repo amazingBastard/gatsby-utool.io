@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import 'containers/benefits/index.css';
+import 'containers/clients/index.css';
 
 class Clients extends Component {
   render() {
