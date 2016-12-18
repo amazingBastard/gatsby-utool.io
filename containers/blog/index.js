@@ -21,9 +21,9 @@ class Blog extends Component {
 		).reverse();
 
 		sortedPosts.forEach((post) => {
-				if (access(post, 'file.ext') === 'md' && access(post, 'data.layout') === 'post' && !include(post.path, '/404')) {
-					postsList.push(<Post meta={post} key={post.path} />);
-				}
+			if (access(post, 'file.ext') === 'md' && access(post, 'data.layout') === 'post' && !include(post.path, '/404')) {
+				postsList.push(<Post meta={post} key={post.path} />);
+			}
 		});
 
 		if (path === prefixLink('/')) {
@@ -45,7 +45,7 @@ class Blog extends Component {
 
 	render() {
     const title = {
-      title: 'Blog'
+      title: 'From the Blog'
     };
 
 		return (
