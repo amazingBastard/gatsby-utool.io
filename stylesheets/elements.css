@@ -52,6 +52,16 @@
 		padding-bottom: 3.33333rem;
 	}
 }
+/* grid */
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* grid cell */
+.grid .cell {
+	flex: 1;
+}
 
 /* title */
 .title {
