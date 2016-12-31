@@ -72,8 +72,9 @@
 	display: block;
 	position: relative;
 	margin: 0;
-	margin-left: 0.83333rem;
+	margin-left: 1.83333rem;
 	padding: 0;
+	list-style-type: square;
 }
 
 .list .item {

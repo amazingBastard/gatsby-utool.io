@@ -1,0 +1,9 @@
+/* figures section figure */
+.figures.section .figure {
+  padding: 0;
+}
+
+/* figures section figure caption */
+.figures.section .figure .caption {
+  margin-bottom: 0.83333rem;
+}

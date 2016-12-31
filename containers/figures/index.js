@@ -13,8 +13,8 @@ class Figures extends Component {
           Recent track record
         </h3>
 
-        <figure className="figure module">
-          <figcaption className="figure caption">
+        <figure className="figure">
+          <figcaption className="caption">
               2015 May
           </figcaption>
           <ul className="list">
@@ -23,8 +23,8 @@ class Figures extends Component {
           </ul>
         </figure>
 
-        <figure className="figure module">
-          <figcaption className="figure caption">
+        <figure className="figure">
+          <figcaption className="caption">
               2015 March
           </figcaption>
           <ul className="list">
