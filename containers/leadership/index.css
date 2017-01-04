@@ -1,0 +1,28 @@
+/* leadership section member card */
+.leadership.section .members.grid .member.cell .card.figure {
+  padding: 0;
+  text-align: center;
+}
+
+/* leadership section member name */
+.leadership.section .members.grid .member.cell .card.figure .caption .name {
+  margin-top: 0.3333rem;
+  font-size: 0.83333rem;
+  line-height: 1.5;
+}
+
+/* leadership section member social */
+.leadership.section .members.grid .member.cell .card.figure .caption .social {
+  display: none;
+}
+
+@media only screen and (min-width: 48em) {
+  .leadership.section .members.grid .member.cell .card.figure .caption .social {
+    display: block;
+  }
+}
+
+/* leadership section member social item */
+.leadership.section .members.grid .member.cell .card.figure .caption .social .list .item {
+  margin: 0 0.3333rem;
+}

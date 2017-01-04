@@ -10,18 +10,18 @@ class Leadership extends Component {
     const { meta, route } = this.props;
 
     return (
-      <section className="leadership segment">
-        <div className="members module gutter grid">
+      <section className="leadership section">
+        <div className="members grid">
           <div className="member cell">
-            <figure className="root card">
+            <figure className="card figure">
               <img className="fluid image" src="/images/members/husam_thumb.jpg" />
               <figcaption className="caption">
-                <h4 className="name">
+                <h6 className="name">
                   Husam Machlovi
                   <small className="title">
                     Partner, Design
                   </small>
-                </h4>
+                </h6>
                 <div className="social">
                   <ul className="inline list">
                     <li className="item">
@@ -46,15 +46,15 @@ class Leadership extends Component {
           </div>
 
           <div className="member cell">
-            <figure className="root card">
+            <figure className="card figure">
               <img className="fluid image" src="/images/members/damir_thumb.jpg" />
               <figcaption className="caption">
-                <h4 className="name">
+                <h6 className="name">
                   Damir Vazgird
                   <small className="title">
                     Partner, Development
                   </small>
-                </h4>
+                </h6>
                 <div className="social">
                   <ul className="inline list">
                     <li className="item">

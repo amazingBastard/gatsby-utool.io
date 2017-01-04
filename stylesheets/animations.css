@@ -5,3 +5,47 @@
 /* NOT FOR: global element styles or element states */
 /* NOT FOR EXAMPLE: section, figure, section.animated.fade-in, button:hover, a:hover */
 /* WARNING: CSS animations are better for animations that you don’t want to stop or adjust after they are triggered */
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fill {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: @full;
+  }
+
+  75% {
+    height: @full;
+  }
+
+  100% {
+    height: 0%;
+  }
+}

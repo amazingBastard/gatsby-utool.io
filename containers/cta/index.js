@@ -7,7 +7,7 @@ class CTA extends Component {
     const { meta, route } = this.props;
 
     return (
-      <section className="fluid cta segment">
+      <section className="fluid cta section">
         <a className="fluid primary cta button" href="#">
           Get Similar Results
           <span className="supporting">
