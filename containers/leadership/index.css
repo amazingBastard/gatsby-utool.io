@@ -4,8 +4,16 @@
   text-align: center;
 }
 
+/* leadership section member image */
+@media only screen and (min-width: 48em) {
+  .leadership.section .members.grid .member.cell .card.figure .image {
+    width: 50%;
+  }
+}
+
 /* leadership section member name */
 .leadership.section .members.grid .member.cell .card.figure .caption .name {
+  margin: 0;
   margin-top: 0.3333rem;
   font-size: 0.83333rem;
   line-height: 1.5;

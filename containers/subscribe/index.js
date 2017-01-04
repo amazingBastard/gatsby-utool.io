@@ -14,7 +14,7 @@ class Subscribe extends Component {
 
     // @TODO: create subscribe form component
     return (
-      <section className="subscribe section">
+      <section className="fluid subscribe section">
         <figure className="subscribe figure">
           <h5 className="title">
             Get on the mailing list:

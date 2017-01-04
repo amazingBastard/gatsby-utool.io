@@ -1,20 +1,15 @@
-/* featured post item */
-.blog.section .featured.posts.list .post.item {
+/* blog post item */
+.blog.section .posts.list .post.item {
 	flex: none;
 	width: 100%;
 }
 
-/* featured post link */
-.blog.section .featured.posts.list .post.item .post.link {
+/* blog post link */
+.blog.section .posts.list .post.item .post.link {
 	text-decoration: none;
 }
 
-/* featured post title */
-.blog.section .featured.posts.list .post.item .post.link .title {
-	transition: all 250ms;
-}
-
-/* featured post link title hover state */
-.blog.section .featured.posts.list .post.item .post.link:hover .title {
+/* blog post title */
+.blog.section .posts.list .post.item .post.link .title {
 	text-decoration: underline;
 }

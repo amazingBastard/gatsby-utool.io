@@ -13,9 +13,6 @@ class Post extends Component {
 				<Link className="post link" to={prefixLink(meta.path)}>
 					<h4 className="title">
 						{meta.data.title}
-						<small className="sub meta date">
-							{moment(meta.data.date).calendar()}
-						</small>
 					</h4>
 					<Summary body={meta.data.body} />
 				</Link>

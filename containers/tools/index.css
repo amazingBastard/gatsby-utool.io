@@ -1,15 +1,15 @@
-/* tool item */
+/* tools tool item */
 .tools.section .tools.list .tool.item {
 	flex: none;
 	width: 100%;
 }
 
-/* featured post link */
+/* tools tool link */
 .tools.section .tools.list .tool.item .tool.link {
 	text-decoration: none;
 }
 
-/* tool link title hover state */
-.tools.section .tools.list .tool.item .tool.link:hover .title {
+/* tools tool link */
+.tools.section .tools.list .tool.item .tool.link .title {
 	text-decoration: underline;
 }
