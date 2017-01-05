@@ -25,9 +25,9 @@ class Subscribe extends Component {
                      className="email input"
                      ref="email"
                      name="email"
-                     placeholder="your_email@gmail.com" />
+                     placeholder="email@example.com" />
               <button type="submit" className="primary submit button">
-                Submit
+                Subscribe
               </button>
             </div>
           </form>
