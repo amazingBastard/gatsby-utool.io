@@ -5,6 +5,7 @@
 
 /* cta section button */
 .cta.section .cta.button {
+  padding: 1.83333rem 0.83333rem;
   border: 0;
   font-weight: bold;
   text-decoration: none;

@@ -19,8 +19,7 @@ const style = {
     width: '100%',
     height: 'auto',
     margin: '0 auto',
-    padding: 0,
-    paddingBottom: rhythm(2)
+    padding: 0
   }
 };
 
