@@ -11,9 +11,9 @@ class Tool extends Component {
 		return (
 			<li className="tool item">
 				<Link className="tool link" to={prefixLink(meta.path)}>
-					<h4 className="title">
+					<h6 className="title">
 						{meta.data.title}
-					</h4>
+					</h6>
           <Summary body={meta.data.body} />
 				</Link>
 			</li>

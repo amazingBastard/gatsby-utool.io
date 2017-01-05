@@ -8,9 +8,9 @@ class Benefits extends Component {
 
     return (
       <section className="benefits section">
-        <h3 className="title">
+        <h5 className="title">
             Attract customers with more
-        </h3>
+        </h5>
         <ul className="list">
           <li className="item">Growth Opportunities</li>
           <li className="item">Trial Signups</li>

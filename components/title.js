@@ -8,9 +8,9 @@ class Title extends Component {
 		// let className = meta.class;
 		// className={className};
 		return (
-			<h3 className="title">
+			<h5 className="title">
 				{meta.title}
-			</h3>
+			</h5>
 		);
 	}
 };

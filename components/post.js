@@ -11,9 +11,9 @@ class Post extends Component {
 		return (
 			<li className="post item">
 				<Link className="post link" to={prefixLink(meta.path)}>
-					<h4 className="title">
+					<h6 className="title">
 						{meta.data.title}
-					</h4>
+					</h6>
 					<Summary body={meta.data.body} />
 				</Link>
 			</li>

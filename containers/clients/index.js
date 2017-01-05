@@ -8,9 +8,9 @@ class Clients extends Component {
 
     return (
       <section className="clients section">
-        <h3 className="title">
+        <h5 className="title">
             Trusted by
-        </h3>
+        </h5>
         <div className="clients mobile half grid module">
           <div className="client cell">
             <img className="fluid image" src="/images/clients/jj.png" />

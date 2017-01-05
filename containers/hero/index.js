@@ -16,31 +16,31 @@ class Hero extends Component {
     if (page.path === prefixLink('/')) {
       hero = (
         <section className="index hero section">
-          <h1 className="title">
+          <h3 className="title">
             We build software.
             <p className="sub description">
               <strong>{config.siteTitle}</strong> {config.siteDescription}
             </p>
-          </h1>
+          </h3>
         </section>
       );
     } else if (access(page, 'file.ext') === 'md' && !include(page.path, '/404')) {
       hero = (
         <section className="markdown hero section">
-          <h2 className="title">
+          <h3 className="title">
             {meta.title}
             <small className="sub meta date">
               {meta.date}
             </small>
-          </h2>
+          </h3>
         </section>
       );
     } else {
       hero = (
         <section className="hero section">
-          <h2 className="title">
+          <h3 className="title">
             {meta.title}
-          </h2>
+          </h3>
         </section>
       );
     }

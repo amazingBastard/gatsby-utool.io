@@ -11,12 +11,9 @@ class Project extends Component {
 		return (
 			<li className="project item">
 				<Link className="project link" to={prefixLink(meta.path)}>
-					<h4 className="title">
+					<h6 className="title">
 						{meta.data.title}
-						<small className="sub meta date">
-							{moment(meta.data.date).calendar()}
-						</small>
-					</h4>
+					</h6>
           <Summary body={meta.data.body} />
 				</Link>
 			</li>

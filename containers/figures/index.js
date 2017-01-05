@@ -9,9 +9,9 @@ class Figures extends Component {
 
     return (
       <section className="figures section">
-        <h3 className="title">
+        <h5 className="title">
           Recent track record
-        </h3>
+        </h5>
 
         <figure className="figure">
           <figcaption className="caption">
