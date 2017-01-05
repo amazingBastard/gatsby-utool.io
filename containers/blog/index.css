@@ -4,8 +4,15 @@
 	width: 100%;
 }
 
+/* blog link */
+.blog.section .link {
+	font-style: italic;
+	text-decoration: underline;
+}
+
 /* blog post link */
 .blog.section .posts.list .post.item .post.link {
+	font-style: normal;
 	text-decoration: none;
 }
 

@@ -14,13 +14,20 @@
 /* hero title */
 .hero.section .title {
 	margin: 0 auto;
+}
+
+/* index hero title */
+.index.hero.section .title {
 	text-align: left;
-	transition: opacity 500ms ease;
 }
 
 /* hero title sub */
 .hero.section .title .sub {
 	display: block;
+}
+
+/* index hero title sub */
+.index.hero.section .title .sub {
 	margin-top: 3.83333rem;
 	color: #111;
 	font-size: 65%;

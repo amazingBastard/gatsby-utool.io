@@ -4,8 +4,15 @@
 	width: 100%;
 }
 
+/* tools link */
+.tools.section .link {
+	font-style: italic;
+	text-decoration: underline;
+}
+
 /* tools tool link */
 .tools.section .tools.list .tool.item .tool.link {
+	font-style: normal;
 	text-decoration: none;
 }
 
