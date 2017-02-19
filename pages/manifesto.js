@@ -3,6 +3,7 @@ import DocumentTitle from 'react-document-title';
 import { rhythm } from 'utils/typography';
 import { config } from 'config';
 import Hero from 'containers/hero';
+import Values from 'containers/values';
 import Subscribe from 'containers/subscribe';
 
 const style = {
@@ -29,31 +30,7 @@ class ManifestoIndex extends Component {
       <DocumentTitle title={`${config.siteTitle} | ${hero.title}`}>
         <main className="index page" style={style.page}>
           <Hero route={route} meta={hero} />
-          <section className="values section">
-            <h5 className="title">Values:</h5>
-            <ul className="values list">
-              <li className="value item">
-                <strong>Authenticity</strong>
-                To be vulnerable and build real connections.
-              </li>
-              <li className="value item">
-                <strong>Adaptability</strong>
-                To respond to change quickly and continually grow.
-              </li>
-              <li className="value item">
-                <strong>Simplicity</strong>
-                To eliminate clutter and keep only what's meaningful.
-              </li>
-              <li className="value item">
-                <strong>Bravery</strong>
-                To take risks and embrace the consequences.
-              </li>
-              <li className="value item">
-                <strong>Self-awareness</strong>
-                To realize our strengths and collaborate effectively.
-              </li>
-            </ul>
-          </section>
+          <Values />
           <Subscribe />
         </main>
       </DocumentTitle>
@@ -61,8 +38,8 @@ class ManifestoIndex extends Component {
   }
 }
 
-AboutIndex.propTypes = {
+ManifestoIndex.propTypes = {
   route: PropTypes.object
 };
 
-export default AboutIndex;
+export default ManifestoIndex;

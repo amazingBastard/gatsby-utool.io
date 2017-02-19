@@ -1,0 +1,10 @@
+/* values list */
+.values.section .values.list {
+  list-style-type: decimal-leading-zero;
+}
+
+/* values list title */
+.values.section .values.list .value.item .title {
+  display: block;
+  margin-top: 0;
+}
