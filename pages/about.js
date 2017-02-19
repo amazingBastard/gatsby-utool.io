@@ -4,6 +4,7 @@ import { rhythm } from 'utils/typography';
 import { config } from 'config';
 import Hero from 'containers/hero';
 import About from 'containers/about';
+import Subscribe from 'containers/subscribe';
 
 const style = {
   page: {
@@ -21,17 +22,17 @@ class AboutIndex extends Component {
   render() {
     const { route } = this.props;
     const hero = {
-      title: 'About page title.'
+      title: 'About µTool',
+      description: 'We\'d be lying if we said we\'re made from different stuff. After all, we\'re all composed of oxgyen, carbon and hydrogen.',
+      punchline: 'However, we are unique in our expertise, experience and process.'
     };
-    const about = {
-      title: 'About page sub title. Edit in: /pages/about.js'
-    }
 
     return (
       <DocumentTitle title={`${config.siteTitle} | Who we are`}>
         <main className="index page" style={style.page}>
           <Hero route={route} meta={hero} />
-          <About route={route} meta={about} />
+          <About route={route} />
+          <Subscribe />
         </main>
       </DocumentTitle>
     );

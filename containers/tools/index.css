@@ -18,5 +18,6 @@
 
 /* tools tool link */
 .tools.section .tools.list .tool.item .tool.link .title {
+	margin-top: 0;
 	text-decoration: underline;
 }

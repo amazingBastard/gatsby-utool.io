@@ -40,6 +40,12 @@ class Hero extends Component {
         <section className="hero section">
           <h3 className="title">
             {meta.title}
+            <p className="sub description">
+              {meta.description}
+            </p>
+            <p className="sub punchline">
+              {meta.punchline}
+            </p>
           </h3>
         </section>
       );

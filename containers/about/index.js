@@ -14,34 +14,11 @@ class About extends Component {
     const page = route.page;
     const aboutPage = find(pages, {requirePath: "about/index.md"});
 
-    let about;
-
-    if (page.path === prefixLink('/')) {
-      about = (
-        <section className="fluid featured about section">
-  				<figure className="image figure">
-  					<img className="image" src={aboutPage.data.image} />
-  				</figure>
-  				<figure className="about figure">
-            <h4 className="title">{meta.title}</h4>
-  					<p className="paragraph">
-              {aboutPage.data.summary}
-            </p>
-            <Link className="link" to={aboutPage.data.path}>Click here to find out more...</Link>
-          </figure>
-        </section>
-      );
-    } else {
-
-      about = (
-        <section className="about section">
-          <h3 className="title">{meta.title}</h3>
-          <article className="markdown article" ref="markdown" dangerouslySetInnerHTML={{__html: aboutPage.data.body}} />
-        </section>
-      );
-    }
-
-    return about;
+    return (
+      <section className="about section">
+        <article className="markdown article" ref="markdown" dangerouslySetInnerHTML={{__html: aboutPage.data.body}} />
+      </section>
+    );
   }
 }
 

@@ -18,5 +18,6 @@
 
 /* blog post title */
 .blog.section .posts.list .post.item .post.link .title {
+	margin-top: 0;
 	text-decoration: underline;
 }

@@ -16,6 +16,7 @@
 }
 
 .work.section .featured.projects.list .project.item .project.link .title {
+	margin-top: 0;
 	transition: all 250ms;
 }
 

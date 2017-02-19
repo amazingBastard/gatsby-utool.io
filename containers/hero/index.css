@@ -8,7 +8,7 @@
 	padding: 0.83333rem;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	text-align: left;
 }
 
 /* hero title */
@@ -16,20 +16,24 @@
 	margin: 0 auto;
 }
 
-/* index hero title */
-.index.hero.section .title {
-	text-align: left;
-}
-
 /* hero title sub */
 .hero.section .title .sub {
 	display: block;
 }
 
-/* index hero title sub */
-.index.hero.section .title .sub {
+/* hero title sub */
+.hero.section .title .sub {
 	margin-top: 3.83333rem;
 	color: #111;
 	font-size: 65%;
+}
+
+/* index hero title sub */
+.index.hero.section .title .sub {
 	text-indent: 2rem;
+}
+
+/* hero title sub punchliune */
+.hero.section .title .sub.punchline {
+	margin-top: 0;
 }
