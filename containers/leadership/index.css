@@ -19,6 +19,11 @@
   line-height: 1.5;
 }
 
+/* leadership section member name title */
+.leadership.section .members.grid .member.cell .card.figure .caption .name .title {
+  margin-top: 0;
+}
+
 /* leadership section member social */
 .leadership.section .members.grid .member.cell .card.figure .caption .social {
   display: none;

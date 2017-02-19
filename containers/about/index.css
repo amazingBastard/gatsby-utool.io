@@ -1,0 +1,11 @@
+/* about article title */
+.about.section .markdown.article .name {
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about.section .markdown.article .name .sub {
+  display: block;
+  line-height: 1;
+}

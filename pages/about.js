@@ -28,7 +28,7 @@ class AboutIndex extends Component {
     };
 
     return (
-      <DocumentTitle title={`${config.siteTitle} | Who we are`}>
+      <DocumentTitle title={`${config.siteTitle} | ${hero.title}`}>
         <main className="index page" style={style.page}>
           <Hero route={route} meta={hero} />
           <About route={route} />
