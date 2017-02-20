@@ -71,6 +71,9 @@ class Menu extends Component {
         </button>
         <figure className="menu container figure">
           <nav className="navigation">
+            <Link className="link" to="/">
+              Home
+            </Link>
             <Link className="link" to="/about/">
               About
             </Link>

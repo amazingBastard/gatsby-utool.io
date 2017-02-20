@@ -28,6 +28,7 @@ class Html extends Component {
                     <title>{title || DocumentTitle.rewind()}</title>
                     <TypographyStyle typography={typography}/>
                     <GoogleFont typography={typography}/>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
                     {css}
                 </head>
                 <body>

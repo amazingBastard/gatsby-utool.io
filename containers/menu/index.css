@@ -1,0 +1,58 @@
+.menu.section {
+  padding: 0.83333rem;
+}
+
+/* menu logo */
+.menu.section .button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0.83333rem;
+}
+
+/* header logo hover */
+.menu.section .button:hover {
+  color: #fff;
+}
+
+/* open menu section */
+.menu.section.open {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 10em;
+  height: auto;
+  margin: 0.83333rem;
+  border: 0.10417rem solid #000;
+  background-color: #ff0;
+  z-index: 10;
+}
+
+/* open menu button */
+.menu.section.open .button {
+  border-top: 0;
+  border-left: 0;
+}
+
+/* menu container */
+.menu.section .menu.figure,
+.menu.section.close .menu.figure {
+  opacity: 0;
+  visibility: none;
+  transition: all 250ms;
+}
+
+/* open menu container */
+.menu.section.open .menu.figure {
+  opacity: 1;
+  visibility: visible;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+/* menu nav button */
+.menu.section .menu.figure .navigation .link {
+  display: block;
+  text-align: right;
+}

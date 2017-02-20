@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import Header from 'containers/header/';
+import Menu from 'containers/menu';
 import Footer from 'containers/footer/';
 
 import 'stylesheets/elements.css';
@@ -36,6 +37,7 @@ class Template extends Component {
     return (
       <main className="main template" style={style.template}>
         <Header location={location} route={route}/>
+        <Menu route={route} />
         <main className="main content" style={style.content}>
           {children}
         </main>
