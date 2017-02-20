@@ -1,5 +1,9 @@
 .menu.section {
-  padding: 0.83333rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0;
 }
 
 /* menu logo */
@@ -47,7 +51,7 @@
 .menu.section.open .menu.figure {
   opacity: 1;
   visibility: visible;
-  padding: 0;
+  padding: 0.83333rem;
   margin-bottom: 2em;
 }
 
