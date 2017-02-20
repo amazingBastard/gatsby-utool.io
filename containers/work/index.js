@@ -44,18 +44,36 @@ class Work extends Component {
   }
 
 	render() {
+    const { route } = this.props;
+    const pages = route.pages;
+    const path = route.page.path;
+
     const title = {
       title: 'Work'
     };
 
-		return (
-      <section className="work section">
-        <figure className="figure container">
-          <Title meta={title} />
-          {this.renderProjects()}
-        </figure>
-      </section>
-    );
+    let section;
+
+    if (path === prefixLink('/')) {
+      section = (
+        <section className="work section">
+          <figure className="figure container">
+            <Title meta={title} />
+            {this.renderProjects()}
+          </figure>
+        </section>
+      )
+    } else {
+      section = (
+        <section className="work section">
+          <figure className="figure container">
+            {this.renderProjects()}
+          </figure>
+        </section>
+      )
+    }
+
+		return section;
 	}
 }
 

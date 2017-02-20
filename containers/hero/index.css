@@ -7,13 +7,13 @@
 	margin: 0 auto;
 	padding: 0.83333rem;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	text-align: left;
 }
 
 /* hero title */
 .hero.section .title {
-	margin: 0 auto;
+	margin: 0;
 }
 
 /* hero title sub */
